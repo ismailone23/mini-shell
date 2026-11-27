@@ -16,6 +16,7 @@ target_sources(minishell # name of the executable to which the sources are being
     PRIVATE 
         src/main.cpp
         src/inputParser.cpp
+        src/execute.cpp
 
         # for the header files, we can use the FILE_SET command to specify the base 
         # directory and the header files to be included in the target
@@ -24,4 +25,5 @@ target_sources(minishell # name of the executable to which the sources are being
         BASE_DIRS src
         FILES
             src/inputParser.h
+            src/execute.h
 )
